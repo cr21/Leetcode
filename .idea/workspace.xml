@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43954cb2-ee40-44d0-b613-8dfd43f312e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Problem_155_Min_Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_155_Min_Stack.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Problem_155_Min_Stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="165" column="12" lean-forward="true" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="216" column="34" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -122,8 +121,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Problem_155_Min_Stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="165" column="12" lean-forward="true" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
+        <state relative-caret-position="17">
+          <caret line="216" column="34" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="34" />
         </state>
       </provider>
     </entry>

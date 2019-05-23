@@ -188,4 +188,52 @@ print(minStack.top());
 print(minStack.getMin())
 
 
+"""
+BElow is another great solution
 
+"""
+class MinStack(object):
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.s1 = []
+        self.s2 = []
+
+    def push(self, x):
+        """
+        :type x: int
+        :rtype: None
+        """
+        self.s1.append(x)
+        if not self.s2:
+            self.s2.append(x)
+        else:
+            top = self.s2[-1]
+            if x<top:
+                self.s2.append(x)
+            else:
+                self.s2.append(top)
+
+    def pop(self):
+        """
+        :rtype: None
+        """
+        if self.s1:
+            self.s1.pop()
+            self.s2.pop()
+
+    def top(self):
+        """
+        :rtype: int
+        """
+        if self.s1:
+            return self.s1[-1]
+
+    def getMin(self):
+        """
+        :rtype: int
+        """
+        if self.s2:
+            return self.s2[-1]
