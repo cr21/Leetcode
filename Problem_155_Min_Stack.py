@@ -71,32 +71,32 @@ class MinStack(object):
 # param_3 = obj.top()
 # param_4 = obj.getMin()
 # Your MinStack object will be instantiated and called as such:
-obj = MinStack()
-
-"""
-["MinStack","push","push","push","top","pop","getMin","pop","getMin","pop","push","top","getMin","push","top","getMin","pop","getMin"]
-[[],[2147483646],[2147483646],[2147483647],[],[],[],[],[],[],[2147483647],[],[],[-2147483648],[],[],[],[]]
-"""
-
-print(obj.getMin())
-obj.push(2147483646)
-obj.push(2147483646)
-obj.push(2147483647)
-print(obj.top())
-print(obj.pop())
-print(obj.getMin())
-print(obj.pop())
-print(obj.getMin())
-print(obj.pop())
-
-obj.push(2147483647)
-print(obj.top())
-print(obj.getMin())
-obj.push(-2147483648)
-print(obj.top())
-print(obj.getMin())
-print(obj.pop())
-print(obj.getMin())
+# obj = MinStack()
+#
+# """
+# ["MinStack","push","push","push","top","pop","getMin","pop","getMin","pop","push","top","getMin","push","top","getMin","pop","getMin"]
+# [[],[2147483646],[2147483646],[2147483647],[],[],[],[],[],[],[2147483647],[],[],[-2147483648],[],[],[],[]]
+# """
+#
+# print(obj.getMin())
+# obj.push(2147483646)
+# obj.push(2147483646)
+# obj.push(2147483647)
+# print(obj.top())
+# print(obj.pop())
+# print(obj.getMin())
+# print(obj.pop())
+# print(obj.getMin())
+# print(obj.pop())
+#
+# obj.push(2147483647)
+# print(obj.top())
+# print(obj.getMin())
+# obj.push(-2147483648)
+# print(obj.top())
+# print(obj.getMin())
+# print(obj.pop())
+# print(obj.getMin())
 # minStack = MinStack()
 # minStack.push(-2);
 # minStack.push(0);
@@ -106,3 +106,86 @@ print(obj.getMin())
 # print("pop",minStack.pop());
 # print(minStack.top());
 # print(minStack.getMin());
+
+
+"""
+Above solution is getting Minimum in O(1) time but it takes extra space we can do it in O(1)
+"""
+
+
+
+
+class OptimizedMinStack(object):
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.stack = list()
+        self.min =None
+    def push(self, x):
+        """
+        :type x: int
+        :rtype: None
+        """
+        if len(self.stack) == 0:
+            self.stack.append(x)
+            self.min = x
+        elif x < self.min:
+            # we will add 2*newElement - old_min to preserve and get previous minimum if we popped the element
+            self.stack.append(2*x-self.min)
+            self.min   = x
+        else:
+            self.stack.append((x))
+
+
+    def pop(self):
+        """
+        :rtype: None
+        """
+
+        if len(self.stack) == 0 :
+            return
+        top_element = self.stack[-1]
+        if top_element < self.min:
+            # old_min = self.min
+            self.min = 2*self.min - top_element
+            self.stack.pop()
+            # return  old_min
+        else :
+            self.stack.pop()
+            # return self.stack.pop()
+
+
+    def top(self):
+        """
+        :rtype: int
+        """
+        if len(self.stack) == 0 :
+            return  None
+        if self.stack[-1] < self.min:
+            return self.min
+        return  self.stack[-1]
+
+
+    def getMin(self):
+        """
+        :rtype: int
+        """
+        if len(self.stack) == 0 :
+            return None
+        return  self.min
+
+minStack = OptimizedMinStack()
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+print(minStack.getMin());
+
+print(minStack.pop());
+
+print(minStack.top());
+print(minStack.getMin())
+
+
+
