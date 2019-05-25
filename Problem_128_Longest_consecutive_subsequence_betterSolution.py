@@ -9,11 +9,9 @@ def longestConsecutive(nums):
         # check previous element is there in set or not otherwise continue
         if x-1  not in nums:
             y = x+1
-
             while y in nums:
                 current_best.append(y)
                 y+=1
-
         best=max(best,y-x)
         print("best ",best)
         print("curernt best list",current_best)
