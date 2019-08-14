@@ -21,3 +21,25 @@ Explanation: Your function can return either index number 1 where the peak eleme
 
 
 """
+
+
+def findPeak_Naive(arr):
+    if len(arr)==1:
+        return 0
+    if arr[0]>arr[1]:
+        return 0
+    if arr[-1]>arr[-2]:
+        return len(arr)-1
+    for index,ele in enumerate(arr):
+        if arr[index+1]<arr[index] and arr[index] > arr[index-1]:
+            return index
+
+    return -1
+
+
+def finaPeak_Efficent(arr):
+    pass
+
+print(findPeak_Naive([1,2,3,1]))
+
+print(findPeak_Naive([1,2,1,3,5,6,4]))
