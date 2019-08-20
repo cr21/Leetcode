@@ -28,7 +28,59 @@ class Solution(object):
         return math.sqrt(num) == int(math.sqrt(num))
 
 
-simple=Solution()
-print(simple.isPerfectSquare_simple(16))# True
+    #  square number is 1+3+5+7+... Time Complexity O(sqrt(N))
+    def isPerfactSquare_using_Sum(self,num):
+        """
 
-print(simple.isPerfectSquare_simple(33))# False
+        :param num: int
+        :return: bool
+        """
+        if (num < 1 ):
+            return False
+        i=1
+        while num >0 :
+            num-=i
+            i+=2
+        return num == 0
+
+    def isPerfactSquare_using_Binary_Search(self, num):
+        """
+
+        :param num: int
+        :return: bool
+        """
+        if num == 0 :
+            return False
+        low ,high = 0, num
+
+        while low <= high:
+            mid = low + (high-low)//2
+            sq = mid*mid
+
+            if sq == num:
+                return True
+            elif num < sq:
+                high = mid-1
+            else:
+                low =mid+1
+
+        return False
+
+
+
+
+simple=Solution()
+# print(simple.isPerfectSquare_simple(16))# True
+#
+# print(simple.isPerfectSquare_simple(33))# False
+
+#
+# print(simple.isPerfactSquare_using_Sum(16))# True
+#
+# print(simple.isPerfactSquare_using_Sum(11))# False
+
+
+
+print(simple.isPerfactSquare_using_Binary_Search(16))# True
+
+print(simple.isPerfactSquare_using_Binary_Search(9))# False
