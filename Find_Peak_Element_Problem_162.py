@@ -38,8 +38,27 @@ def findPeak_Naive(arr):
 
 
 def finaPeak_Efficent(arr):
-    pass
+
+    low =0
+    high = len(arr)-1
+    while low < high:
+        mid =  (high +low )//2
+        if arr[mid] > arr[mid+1]:
+            high = mid
+        else:
+            low = mid+1
+    return low
+
+
+
+
 
 print(findPeak_Naive([1,2,3,1]))
 
 print(findPeak_Naive([1,2,1,3,5,6,4]))
+
+print(finaPeak_Efficent([1,2,3,1]))
+
+print(finaPeak_Efficent([1,2,1,3,5,6,4]))
+
+print(finaPeak_Efficent([1,2,3,4,3]))
