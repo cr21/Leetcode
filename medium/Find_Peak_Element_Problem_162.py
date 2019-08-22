@@ -62,3 +62,5 @@ print(finaPeak_Efficent([1,2,3,1]))
 print(finaPeak_Efficent([1,2,1,3,5,6,4]))
 
 print(finaPeak_Efficent([1,2,3,4,3]))
+
+print(finaPeak_Efficent([8,8,8,5,6,13,2]))
