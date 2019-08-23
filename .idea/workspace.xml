@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43954cb2-ee40-44d0-b613-8dfd43f312e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/easy/Relative_Rank_Problem_506.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easy/Binary_Search_Problem_704.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Find_Peak_Element_Problem_162.py" beforeDir="false" afterPath="$PROJECT_DIR$/medium/Find_Peak_Element_Problem_162.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
