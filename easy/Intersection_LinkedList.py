@@ -9,7 +9,7 @@ if they meet then intersection
 other aproach :
 
 lets say A is shorter than B then when A reached end point it to original head of B and viceversa B end then point
-to original headA , and count it to 2 swap, if they have same before second swap they have intersection
+to original headA , and count it to 2 swap, if they have same before second swap they have intersectiong
 
 """
 class Solution(object):
