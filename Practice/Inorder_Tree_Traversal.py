@@ -44,9 +44,7 @@ class Solution(object):
                 stack.append(current)
                 current = current.left
             elif stack:
-
                 current = stack.pop()
-
                 visited.append(current.val)
                 current = current.right
             else:
@@ -54,3 +52,59 @@ class Solution(object):
         return visited
 
 
+
+
+""""
+Step 1: Initialize current as root
+
+Step 2: While current is not NULL,
+
+If current does not have left child
+
+    a. Add current’s value
+
+    b. Go to the right, i.e., current = current.right
+
+Else
+
+    a. In current's left subtree, make current the right child of the rightmost node
+    find inorder predecessor of current and point inorderpredessor.right =current
+    b. Go to this left child, i.e., current = current.left  
+
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        ArrayList<Integer> visited = new ArrayList<>();
+        
+        TreeNode current = root;
+            TreeNode predessor;
+        while( current != null){
+            if(current.left == null){
+                visited.add(current.val);
+                current = current.right;
+            }
+            else{
+                 predessor = current.left;
+                while (predessor.right !=  current && predessor.right != null){
+                    predessor = predessor.right;
+                }
+                if (predessor.right == null){
+                    predessor.right = current;
+                    current = current.left;
+                }else{
+                    visited.add(current.val);
+                    predessor.right = null;
+                    current=current.right;        
+                }
+            }
+        }
+        System.out.print(visited.toString());
+        return visited;
+            
+        
+    }
+}
+
+
+
+
+"""
