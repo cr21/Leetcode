@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43954cb2-ee40-44d0-b613-8dfd43f312e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/easy/ReverseString_2_Problem541.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easy/String_Reverse_Problem344.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easy/Reverse_WordsinString3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
