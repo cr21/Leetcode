@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43954cb2-ee40-44d0-b613-8dfd43f312e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/easy/Reverse_WordsinString3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easy/Array/Rotate_Array_right_by_K_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medium/Reverse_Words_in_string.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Udacity_Algorithm_DataStructureNanodegree" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -76,18 +77,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582163533319">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="17" width="1092" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1582163533319" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1580356779873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580356779873" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1579738546674">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1582163753412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579738546674" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1580502886058">
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582163753412" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582162771892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580502886058" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582162771892" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1579740123281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
