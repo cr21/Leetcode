@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43954cb2-ee40-44d0-b613-8dfd43f312e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/easy/Array/Rotate_Array_right_by_K_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medium/Reverse_Words_in_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easy/Math/Count_Prime@04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,10 +88,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582163753412" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582162771892">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582315358550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582162771892" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582315358550" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1579740123281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
